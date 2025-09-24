@@ -1,4 +1,4 @@
-import pygame # type: ignore
+import pygame
 import sys
 import random
 import time
@@ -10,7 +10,7 @@ DOWN = 3
 LEFT = 4
 
 class SnakeGame:
-    def _init_(self):
+    def __init__(self):
         pygame.init()
         self.width = 800
         self.height = 600
@@ -82,6 +82,6 @@ class SnakeGame:
         pygame.draw.rect(self.display, (255, 0, 0), pygame.Rect(self.apple[0], self.apple[1], 10, 10))
         pygame.display.update()
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     game = SnakeGame()
     game.play()
