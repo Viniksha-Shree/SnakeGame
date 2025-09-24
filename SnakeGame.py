@@ -85,4 +85,3 @@ class SnakeGame:
 if _name_ == '_main_':
     game = SnakeGame()
     game.play()
-explain the code and the oops concept used in this code and other questions coule be asked from the code and this project with answers
